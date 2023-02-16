@@ -8,12 +8,7 @@
 
 ## 導入
 
-1. 必要なパッケージをインストールします。
-```shell
-pip install -r requirements.txt
-```
-
-2. コンパイルしたいディレクトリの絶対パスを指定してコンパイルを行います。
+1. コンパイルしたいディレクトリの絶対パスを指定してコンパイルを行います。
 ```shell
 python main.py /your/workspace/path/CS
 ```
