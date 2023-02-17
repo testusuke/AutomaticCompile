@@ -14,7 +14,7 @@ def compile_cfile(path):
     print(YELLOW + "compiling", os.path.basename(path))
     cp = subprocess.run(['gcc', path, '-lm'], encoding='utf-8', stdout=subprocess.PIPE)
     if cp.returncode != 0:
-        print(os.path.basename(path) + ' compile failed.', file=cp.stderr)
+        print(RED + os.path.basename(path) + ' compile failed.', file=cp.stderr)
         return False
     else:
         print(GREEN + "compile successful.")
