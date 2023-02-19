@@ -8,7 +8,7 @@ YELLOW = '\033[33m'
 RED = '\033[31m'
 
 def get_clang_files(path):
-    return glob.glob(path + '/**/*.c')
+    return glob.glob(path + '/**/*.c', recursive=True)
 
 def compile_cfile(path):
     print(YELLOW + "compiling", os.path.basename(path))
